@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davi · Desenvolvedor Full-Stack</title>
+  <meta name="description" content="Portfólio de Davi (DaviSoftEng) — desenvolvedor full-stack. Sistemas web, landing pages e dashboards." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-name">Davi<span class="dot">Soft</span>Eng</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <a href="https://github.com/DaviSoftEng" target="_blank" rel="noopener" class="btn-nav">GitHub</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <a href="https://github.com/DaviSoftEng" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="shader-canvas" class="shader-canvas"></canvas>
+    <div class="hero-overlay">
+      <div class="trust-badge fade-in-down">
+        <span class="badge-icons">★</span>
+        <span>Full-Stack · React · Node · TypeScript</span>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="line line-1 fade-in-up delay-200">Davi</span>
+          <span class="line line-2 fade-in-up delay-400">Desenvolvedor Full-Stack</span>
+        </h1>
+
+        <p class="hero-subtitle fade-in-up delay-600">
+          Construo sistemas web completos — do front-end ao banco de dados.
+          Landing pages, dashboards e aplicações de gestão para negócios reais.
+        </p>
+
+        <div class="hero-buttons fade-in-up delay-800">
+          <a href="#projetos" class="btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn-secondary">Entrar em contato</a>
+        </div>
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-cue" aria-label="Rolar para baixo">&#8595;</a>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <span class="section-tag">Sobre</span>
+      <h2 class="section-title">Davi Machado</h2>
+      <p class="about-role">Full-Stack <span class="amp">&amp;</span> AIDD</p>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="davi.jpeg" alt="Foto de Davi" />
+        </div>
+        <div class="about-text">
+          <p>
+            Sou desenvolvedor full-stack e também atuo com <strong>análise de dados e
+            Power BI</strong>. Transformo a necessidade de um negócio em software que
+            funciona — e em informação que ajuda a decidir: do front-end ao banco de
+            dados, e dos dados brutos ao dashboard.
+          </p>
+          <p>
+            No dia a dia, uso <strong>inteligência artificial como ferramenta de
+            trabalho</strong>: ela me ajuda a desenvolver mais rápido, revisar código e
+            resolver problemas com mais clareza — sem abrir mão de entender o que está
+            sendo construído. Pra mim, saber usar IA bem hoje vale tanto quanto dominar
+            uma linguagem.
+          </p>
+          <p>
+            Trabalho com <strong>React, TypeScript, Node.js, Python, PostgreSQL e
+            Power BI</strong>, sempre com atenção à segurança e à experiência de quem vai usar o sistema.
+            Meu foco é simples: resolver o problema do cliente com uma solução sólida,
+            bem feita e fácil de manter.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-skills">
+          <div class="tech-band">
+            <div class="tech-marquee">
+              <!-- conjunto 1 -->
+              <ul class="tech-track">
+                <li class="tech-bubble"><span class="ic"><i class="devicon-react-original colored"></i></span><span class="lbl">React</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-typescript-plain colored"></i></span><span class="lbl">TypeScript</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-javascript-plain colored"></i></span><span class="lbl">JavaScript</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-nodejs-plain colored"></i></span><span class="lbl">Node.js</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-python-plain colored"></i></span><span class="lbl">Python</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-postgresql-plain colored"></i></span><span class="lbl">PostgreSQL</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-prisma-original"></i></span><span class="lbl">Prisma</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-docker-plain colored"></i></span><span class="lbl">Docker</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-tailwindcss-plain colored"></i></span><span class="lbl">Tailwind</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-html5-plain colored"></i></span><span class="lbl">HTML5</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-css3-plain colored"></i></span><span class="lbl">CSS3</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-git-plain colored"></i></span><span class="lbl">Git</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-vscode-plain colored"></i></span><span class="lbl">VS Code</span></li>
+                <li class="tech-bubble"><span class="ic"><img class="ic-img" src="https://cdn.simpleicons.org/claude/D97757" alt="Claude" /></span><span class="lbl">Claude</span></li>
+                <li class="tech-bubble"><span class="ic"><svg class="ic-img" viewBox="0 0 24 24" role="img" aria-label="Power BI"><rect x="3.2" y="9" width="3.6" height="11" rx="1.2" fill="#F2C811"/><rect x="10.2" y="6" width="3.6" height="14" rx="1.2" fill="#EFB300"/><rect x="17.2" y="3" width="3.6" height="17" rx="1.2" fill="#E89E00"/></svg></span><span class="lbl">Power BI</span></li>
+              </ul>
+              <!-- conjunto 2 (cópia p/ loop sem emenda) -->
+              <ul class="tech-track" aria-hidden="true">
+                <li class="tech-bubble"><span class="ic"><i class="devicon-react-original colored"></i></span><span class="lbl">React</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-typescript-plain colored"></i></span><span class="lbl">TypeScript</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-javascript-plain colored"></i></span><span class="lbl">JavaScript</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-nodejs-plain colored"></i></span><span class="lbl">Node.js</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-python-plain colored"></i></span><span class="lbl">Python</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-postgresql-plain colored"></i></span><span class="lbl">PostgreSQL</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-prisma-original"></i></span><span class="lbl">Prisma</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-docker-plain colored"></i></span><span class="lbl">Docker</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-tailwindcss-plain colored"></i></span><span class="lbl">Tailwind</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-html5-plain colored"></i></span><span class="lbl">HTML5</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-css3-plain colored"></i></span><span class="lbl">CSS3</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-git-plain colored"></i></span><span class="lbl">Git</span></li>
+                <li class="tech-bubble"><span class="ic"><i class="devicon-vscode-plain colored"></i></span><span class="lbl">VS Code</span></li>
+                <li class="tech-bubble"><span class="ic"><img class="ic-img" src="https://cdn.simpleicons.org/claude/D97757" alt="Claude" /></span><span class="lbl">Claude</span></li>
+                <li class="tech-bubble"><span class="ic"><svg class="ic-img" viewBox="0 0 24 24" role="img" aria-label="Power BI"><rect x="3.2" y="9" width="3.6" height="11" rx="1.2" fill="#F2C811"/><rect x="10.2" y="6" width="3.6" height="14" rx="1.2" fill="#EFB300"/><rect x="17.2" y="3" width="3.6" height="17" rx="1.2" fill="#E89E00"/></svg></span><span class="lbl">Power BI</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETOS ===== -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <span class="section-tag">Portfólio</span>
+      <h2 class="section-title">Projetos</h2>
+    </div>
+
+    <div class="carousel">
+      <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Projeto anterior">&#8249;</button>
+      <div class="carousel-viewport" id="carouselViewport">
+        <div class="carousel-track" id="carouselTrack">
+
+        <!-- Car-Station -->
+        <article class="project-card carousel-card">
+          <div class="project-head">
+            <h3>Painel de Indicadores (BI)</h3>
+            <span class="project-type">Sistema</span>
+          </div>
+          <p class="project-desc">
+            Painel interno que centraliza dashboards do Power BI com login,
+            níveis de acesso (Admin/Gestor) e gestão de usuários.
+          </p>
+          <ul class="project-tags">
+            <li>Node</li><li>Express</li><li>PostgreSQL</li><li>JWT</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/DaviSoftEng/Car-Station" target="_blank" rel="noopener">Código →</a>
+          </div>
+        </article>
+
+        <!-- Avance-Barbearia -->
+        <article class="project-card carousel-card">
+          <div class="project-head">
+            <h3>Sistema para Barbearia</h3>
+            <span class="project-type">Sistema</span>
+          </div>
+          <p class="project-desc">
+            Aplicação full-stack para gestão de barbearia, com arquitetura
+            cliente + servidor.
+          </p>
+          <ul class="project-tags">
+            <li>JavaScript</li><li>Node</li><li>API REST</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/DaviSoftEng/Avance-Barbearia" target="_blank" rel="noopener">Código →</a>
+          </div>
+        </article>
+
+        <!-- CarStation-Frotas -->
+        <article class="project-card project-card--featured carousel-card">
+          <div class="project-head">
+            <h3>Sistema de Gestão de Frotas</h3>
+            <span class="project-type">Destaque</span>
+          </div>
+          <p class="project-desc">
+            Meu projeto mais complexo: plataforma de gestão de frotas para o
+            setor de veículos elétricos (carros e carrinhos de golfe). Gerencia
+            reservas por modelo e configuração — para venda ou locação — e
+            acompanha toda a frota em tempo real, incluindo as bases externas
+            da operação.
+          </p>
+          <ul class="project-tags">
+            <li>Python</li><li>Flask</li><li>Docker</li><li>Tempo real</li><li>Multi-base</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/DaviSoftEng/CarStation-Frotas" target="_blank" rel="noopener">Código →</a>
+          </div>
+        </article>
+
+        <!-- De-Paula-Silva-Refrigeração -->
+        <article class="project-card carousel-card">
+          <div class="project-head">
+            <h3>Site Institucional — Refrigeração</h3>
+            <span class="project-type">Landing page</span>
+          </div>
+          <p class="project-desc">
+            Site institucional para empresa de refrigeração, responsivo e
+            com foco em contato e conversão.
+          </p>
+          <ul class="project-tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://de-paula-silva-refrigera-o.vercel.app" target="_blank" rel="noopener">Ver site ↗</a>
+            <a href="https://github.com/DaviSoftEng/De-Paula-Silva-Refrigera-o" target="_blank" rel="noopener">Código →</a>
+          </div>
+        </article>
+
+        <!-- OdontoSystem (ainda não no git) -->
+        <article class="project-card project-card--featured carousel-card">
+          <div class="project-head">
+            <h3>Sistema de Gestão Odontológica</h3>
+            <span class="project-type">Em breve no GitHub</span>
+          </div>
+          <p class="project-desc">
+            Sistema completo de gestão para clínicas odontológicas: agenda,
+            fichas, financeiro, relatórios e log de auditoria. Segurança forte
+            (JWT, CSRF, rate limiting).
+          </p>
+          <ul class="project-tags">
+            <li>React</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li>
+          </ul>
+          <div class="project-links">
+            <!-- TODO: trocar por link do repo quando subir pro git -->
+            <span class="link-soon">Repositório em breve</span>
+          </div>
+        </article>
+
+        <!-- Arte do Mineiro (ainda não no git) -->
+        <article class="project-card carousel-card">
+          <div class="project-head">
+            <h3>Cardápio Digital — Restaurante</h3>
+            <span class="project-type">Em breve no GitHub</span>
+          </div>
+          <p class="project-desc">
+            Landing page para restaurante, com cardápio visual e pedidos
+            integrados ao WhatsApp.
+          </p>
+          <ul class="project-tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <!-- TODO: trocar por link do repo quando subir pro git -->
+            <span class="link-soon">Repositório em breve</span>
+          </div>
+        </article>
+
+        </div><!-- /carousel-track -->
+      </div><!-- /carousel-viewport -->
+      <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Próximo projeto">&#8250;</button>
+    </div><!-- /carousel -->
+
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ===== FRASE / LINHA ELÁSTICA ===== -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="elastic-line" id="elasticLine" aria-hidden="true">
+        <svg id="elasticSvg">
+          <defs>
+            <linearGradient id="elasticGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="100%" y2="0">
+              <stop offset="0"    stop-color="#ff5a3c" stop-opacity="0" />
+              <stop offset="0.25" stop-color="#ff8a2b" />
+              <stop offset="0.5"  stop-color="#ffc24b" />
+              <stop offset="0.75" stop-color="#ff8a2b" />
+              <stop offset="1"    stop-color="#ff5a3c" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <path id="elasticPath" fill="none" stroke="url(#elasticGrad)" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+      <blockquote class="quote">
+        <p>"Se algo é importante o suficiente, você deve tentar — mesmo que a probabilidade de sucesso seja zero."</p>
+        <cite>Elon Musk</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="section">
+    <div class="container contato-inner">
+      <span class="section-tag">Contato</span>
+      <h2 class="section-title">Vamos conversar</h2>
+      <p class="contato-text">
+        Disponível para projetos e oportunidades. Me chame por aqui:
+      </p>
+      <div class="contato-links">
+        <a href="https://github.com/DaviSoftEng" target="_blank" rel="noopener" class="btn-primary">GitHub</a>
+        <!-- TODO: adicionar seus links reais -->
+        <a href="mailto:davimachado0610@gmail.com" class="btn-secondary">E-mail</a>
+        <!-- <a href="#" class="btn-secondary">LinkedIn</a> -->
+        <!-- <a href="#" class="btn-secondary">WhatsApp</a> -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Davi · DaviSoftEng — Feito com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/shader.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/elastic.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
