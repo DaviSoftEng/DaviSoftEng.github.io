@@ -434,6 +434,50 @@ a { color: inherit; text-decoration: none; }
 .project-links a:hover { color: var(--orange); }
 .link-soon { font-size: .9rem; color: var(--text-dim); font-style: italic; }
 
+/* ----- Toggle "Ver todos" ----- */
+.projects-toggle-wrap {
+  display: flex; justify-content: center;
+  margin-top: 32px;
+}
+.btn-toggle-grid {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 11px 26px;
+  background: var(--card);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--amber);
+  font-size: .95rem; font-weight: 600;
+  cursor: pointer;
+  transition: background .25s, transform .25s, box-shadow .25s;
+}
+.btn-toggle-grid:hover {
+  background: rgba(255, 138, 43, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,.35);
+}
+.btn-toggle-grid .toggle-icon { font-size: 1.1rem; transition: transform .3s; }
+.btn-toggle-grid.active .toggle-icon { transform: rotate(45deg); }
+
+/* Grid expandido */
+.projects-grid-full {
+  display: none;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: var(--maxw);
+  margin: 32px auto 0;
+  padding: 0 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .4s ease, transform .4s ease;
+}
+.projects-grid-full.open {
+  display: grid;
+}
+.projects-grid-full.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ----- Frase / linha elástica ----- */
 .quote-section {
   background: var(--bg-soft);

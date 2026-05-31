@@ -47,4 +47,45 @@
   } else {
     revealEls.forEach((el) => el.classList.add('visible'));
   }
+  // ----- Toggle "Ver todos os projetos" -----
+  const toggleBtn  = document.getElementById('toggleGrid');
+  const grid       = document.getElementById('projectsGrid');
+  const carousel   = document.querySelector('.carousel');
+  const dotsWrap   = document.getElementById('carouselDots');
+
+  if (toggleBtn && grid && carousel) {
+    // popula o grid com cópias dos cards (sem os clones do loop infinito)
+    const originals = document.querySelectorAll('#carouselTrack .carousel-card:not(.is-clone)');
+    originals.forEach((card) => {
+      const clone = card.cloneNode(true);
+      clone.classList.remove('carousel-card', 'in');
+      clone.style.animationDelay = '';
+      grid.appendChild(clone);
+    });
+
+    let open = false;
+    toggleBtn.addEventListener('click', () => {
+      open = !open;
+      toggleBtn.classList.toggle('active', open);
+      toggleBtn.querySelector('.toggle-label').textContent = open
+        ? 'Fechar'
+        : 'Ver todos os projetos';
+
+      if (open) {
+        carousel.style.display = 'none';
+        dotsWrap.style.display = 'none';
+        grid.classList.add('open');
+        requestAnimationFrame(() => grid.classList.add('visible'));
+        grid.setAttribute('aria-hidden', 'false');
+      } else {
+        grid.classList.remove('visible');
+        grid.addEventListener('transitionend', () => {
+          grid.classList.remove('open');
+        }, { once: true });
+        carousel.style.display = '';
+        dotsWrap.style.display = '';
+        grid.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
 })();
