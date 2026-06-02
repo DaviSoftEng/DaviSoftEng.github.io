@@ -24,6 +24,4 @@ portifolio/
     └── main.js       # menu, animações, reveal
 ```
 
-## Rodando localmente
 
-Basta abrir o `index.html` no navegador — sem build, sem dependências.
