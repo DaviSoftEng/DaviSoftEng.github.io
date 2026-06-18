@@ -155,123 +155,101 @@
       <div class="carousel-viewport" id="carouselViewport">
         <div class="carousel-track" id="carouselTrack">
 
-        <!-- Car-Station -->
-        <article class="project-card carousel-card">
+        <!-- Painel de Indicadores (BI) -->
+        <article class="project-card carousel-card" data-project="bi" role="button" tabindex="0" aria-label="Ver detalhes do Painel de Indicadores (BI)">
           <div class="project-head">
             <h3>Painel de Indicadores (BI)</h3>
             <span class="project-type">Sistema</span>
           </div>
           <p class="project-desc">
-            Painel interno que centraliza dashboards do Power BI com login,
-            níveis de acesso (Admin/Gestor) e gestão de usuários.
+            Painel interno que centraliza dashboards do Power BI com login e
+            níveis de acesso (Admin/Gestor).
           </p>
           <ul class="project-tags">
             <li>Node</li><li>Express</li><li>PostgreSQL</li><li>JWT</li>
           </ul>
-          <div class="project-links">
-            <a href="https://github.com/DaviSoftEng/Car-Station-Power-bi" target="_blank" rel="noopener">Código →</a>
-          </div>
+          <span class="card-more">Ver detalhes <span class="arr">&#8594;</span></span>
         </article>
 
         <!-- Avance-Barbearia -->
-        <article class="project-card carousel-card">
+        <article class="project-card carousel-card" data-project="barbearia" role="button" tabindex="0" aria-label="Ver detalhes do Sistema para Barbearia">
           <div class="project-head">
             <h3>Sistema para Barbearia</h3>
-            <span class="project-type">Sistema</span>
+            <span class="project-type project-type--live"><span class="live-dot"></span>No ar</span>
           </div>
           <p class="project-desc">
-            Plataforma de agendamento online para barbearia: clientes reservam
-            horários por serviço e acompanham seus agendamentos. O admin gerencia
-            agenda, serviços e disponibilidade de horários em tempo real.
+            Agendamento online para barbearia, em produção: clientes reservam
+            horários e o admin gerencia agenda, serviços e faturamento.
           </p>
           <ul class="project-tags">
-            <li>React</li><li>Node</li><li>Prisma</li><li>SQLite</li><li>JWT</li>
+            <li>React</li><li>Vite</li><li>Node</li><li>Prisma</li><li>SQLite</li>
           </ul>
-          <div class="project-links">
-            <a href="https://avance-barbearia-production.up.railway.app/" target="_blank" rel="noopener">Ver site ↗</a>
-            <a href="https://github.com/DaviSoftEng/Avance-Barbearia" target="_blank" rel="noopener">Código →</a>
-          </div>
+          <span class="card-more">Ver detalhes <span class="arr">&#8594;</span></span>
         </article>
 
         <!-- Naildesigner -->
-        <article class="project-card carousel-card">
+        <article class="project-card carousel-card" data-project="nail" role="button" tabindex="0" aria-label="Ver detalhes do Sistema para Nail Designer">
           <div class="project-head">
             <h3>Sistema para Nail Designer</h3>
             <span class="project-type">Sistema</span>
           </div>
           <p class="project-desc">
-            Plataforma de agendamento online para nail designers e
-            designers de sobrancelha: clientes reservam serviços e veem o
-            portfólio. O admin gerencia agenda, serviços, galeria de fotos
-            e métricas de faturamento, com confirmação via WhatsApp.
+            Agendamento online para nail designers, com catálogo de serviços,
+            galeria de portfólio e confirmação via WhatsApp.
           </p>
           <ul class="project-tags">
-            <li>React</li><li>Vite</li><li>Tailwind</li><li>Node</li><li>SQLite</li><li>JWT</li>
+            <li>React</li><li>Vite</li><li>Tailwind</li><li>Node</li><li>SQLite</li>
           </ul>
-          <div class="project-links">
-            <a href="https://github.com/DaviSoftEng/Naildesigner" target="_blank" rel="noopener">Código →</a>
-          </div>
+          <span class="card-more">Ver detalhes <span class="arr">&#8594;</span></span>
         </article>
 
-        <!-- CarStation-Frotas -->
-        <article class="project-card project-card--featured carousel-card">
+        <!-- Sistema de Gestão de Frotas (repositório privado) -->
+        <article class="project-card project-card--featured carousel-card" data-project="frotas" role="button" tabindex="0" aria-label="Ver detalhes do Sistema de Gestão de Frotas">
           <div class="project-head">
             <h3>Sistema de Gestão de Frotas</h3>
             <span class="project-type">Destaque</span>
           </div>
           <p class="project-desc">
-            Plataforma de gestão comercial de frotas para veículos elétricos
-            (carros e carrinhos de golfe). Controla disponibilidade, reservas
-            e solicitações de venda/locação com fluxo de aprovação multiperfil
-            (vendedor → PCP → comercial). Log de auditoria completo, 350 testes
-            e segurança robusta (headers HTTP, rate limiting, bloqueio de conta).
+            Sistema interno <strong>em produção e uso diário</strong> que centraliza a
+            operação comercial de uma frota de veículos elétricos em 4 filiais —
+            pedidos, aprovações entre áreas, transferências e auditoria completa.
           </p>
           <ul class="project-tags">
-            <li>Python</li><li>Flask</li><li>MariaDB</li><li>Docker</li><li>Auditoria</li><li>Segurança</li>
+            <li>Python</li><li>Flask</li><li>MariaDB</li><li>Docker</li><li>Auditoria</li>
           </ul>
-          <div class="project-links">
-            <span class="link-soon">Repositório privado</span>
-          </div>
+          <span class="card-more">Ver detalhes <span class="arr">&#8594;</span></span>
         </article>
 
         <!-- De-Paula-Silva-Refrigeração -->
-        <article class="project-card carousel-card">
+        <article class="project-card carousel-card" data-project="refrigeracao" role="button" tabindex="0" aria-label="Ver detalhes do Site Institucional de Refrigeração">
           <div class="project-head">
             <h3>Site Institucional — Refrigeração</h3>
             <span class="project-type">Landing page</span>
           </div>
           <p class="project-desc">
-            Site institucional para empresa de refrigeração, responsivo e
-            com foco em contato e conversão.
+            Site institucional responsivo para empresa de refrigeração, com
+            foco em contato e conversão.
           </p>
           <ul class="project-tags">
             <li>HTML</li><li>CSS</li><li>JavaScript</li>
           </ul>
-          <div class="project-links">
-            <a href="https://de-paula-silva-refrigera-o.vercel.app" target="_blank" rel="noopener">Ver site ↗</a>
-            <a href="https://github.com/DaviSoftEng/De-Paula-Silva-Refrigera-o" target="_blank" rel="noopener">Código →</a>
-          </div>
+          <span class="card-more">Ver detalhes <span class="arr">&#8594;</span></span>
         </article>
 
         <!-- OdontoSystem (ainda não no git) -->
-        <article class="project-card project-card--featured carousel-card">
+        <article class="project-card project-card--featured carousel-card" data-project="odonto" role="button" tabindex="0" aria-label="Ver detalhes do Sistema de Gestão Odontológica">
           <div class="project-head">
             <h3>Sistema de Gestão Odontológica</h3>
-            <span class="project-type">Em breve no GitHub</span>
+            <span class="project-type">Em breve</span>
           </div>
           <p class="project-desc">
-            Sistema completo para clínicas odontológicas: dashboard, agenda,
-            fichas de pacientes, lista de espera, financeiro (despesas, vales,
-            folha diária), relatórios e catálogo de procedimentos. Três perfis
-            de acesso, log de auditoria e segurança robusta (JWT, CSRF,
-            rate limiting).
+            Sistema completo para clínicas: agenda, fichas de pacientes,
+            financeiro e relatórios, com 3 perfis de acesso.
           </p>
           <ul class="project-tags">
-            <li>React</li><li>TypeScript</li><li>Node</li><li>Prisma</li><li>PostgreSQL</li><li>Dashboard</li>
+            <li>React</li><li>TypeScript</li><li>Node</li><li>Prisma</li><li>PostgreSQL</li>
           </ul>
-          <div class="project-links">
-            <span class="link-soon">Repositório em breve</span>
-          </div>
+          <span class="card-more">Ver detalhes <span class="arr">&#8594;</span></span>
         </article>
 
         </div><!-- /carousel-track -->
@@ -340,7 +318,16 @@
     </div>
   </footer>
 
+  <!-- ===== MODAL DE PROJETO ===== -->
+  <div class="modal-overlay" id="projectModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar detalhes">&times;</button>
+      <div class="modal-scroll" id="modalBody"></div>
+    </div>
+  </div>
+
   <script src="js/shader.js"></script>
+  <script src="js/projects.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/elastic.js"></script>
   <script src="js/main.js"></script>
