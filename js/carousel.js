@@ -92,17 +92,23 @@
   }
 
   // ---------- arrastar (mouse + toque) ----------
-  let startX = 0, startLeft = 0, moved = false;
+  // Só captura o ponteiro quando o arrasto começa de fato (>4px); assim um
+  // clique parado não vira "capture" e o evento de click chega no card.
+  let startX = 0, startLeft = 0, moved = false, pointerId = null;
   viewport.addEventListener('pointerdown', (e) => {
     dragging = true; moved = false; paused = true;
     startX = e.clientX; startLeft = viewport.scrollLeft;
-    viewport.classList.add('dragging');
-    viewport.setPointerCapture(e.pointerId);
+    pointerId = e.pointerId;
   });
   viewport.addEventListener('pointermove', (e) => {
     if (!dragging) return;
     const dx = e.clientX - startX;
-    if (Math.abs(dx) > 4) moved = true;
+    if (!moved && Math.abs(dx) > 4) {
+      moved = true;
+      viewport.classList.add('dragging');
+      try { viewport.setPointerCapture(pointerId); } catch (_) {}
+    }
+    if (!moved) return;
     let x = startLeft - dx;
     if (x >= loopWidth) x -= loopWidth;
     else if (x < 0) x += loopWidth;
@@ -112,10 +118,12 @@
     if (!dragging) return;
     dragging = false;
     viewport.classList.remove('dragging');
-    viewport.scrollTo({
-      left: Math.round(viewport.scrollLeft / cardStep) * cardStep,
-      behavior: reduceMotion ? 'auto' : 'smooth'
-    });
+    if (moved) {
+      viewport.scrollTo({
+        left: Math.round(viewport.scrollLeft / cardStep) * cardStep,
+        behavior: reduceMotion ? 'auto' : 'smooth'
+      });
+    }
     if (e && e.pointerType === 'touch') paused = false;   // toque não tem "hover"
   }
   viewport.addEventListener('pointerup', endDrag);
